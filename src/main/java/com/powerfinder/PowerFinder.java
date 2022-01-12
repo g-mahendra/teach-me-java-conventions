@@ -1,7 +1,7 @@
-package powerpackage;
+package com.powerfinder;
 
 public class PowerFinder {
-    public int of(int number, int exponent) {
+    public int calculatePower(int number, int exponent) {
         int power = 1;
         for (int i = 0; i<exponent; i++) {
             power *= number;

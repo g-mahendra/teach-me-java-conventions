@@ -1,6 +1,6 @@
 import org.junit.Test;
 import org.junit.Before;
-import powerpackage.PowerFinder;
+import com.powerfinder.PowerFinder;
 import static org.junit.Assert.assertEquals;
 
 public class PowerTest {
@@ -14,18 +14,18 @@ public class PowerTest {
 
     @Test
     public void testThatOneRaisedToOneReturnsOne() {
-        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.of(1, 1), 1);
+        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.calculatePower(1, 1), 1);
     }
     @Test
     public void testThatTwoRaisedToOneReturnsTwo() {
-        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.of(2, 1), 2);
+        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.calculatePower(2, 1), 2);
     }
     @Test
     public void testThatTwoRaisedToTwoReturnsFour() {
-        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.of(2, 2), 4);
+        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.calculatePower(2, 2), 4);
     }
     @Test
     public void testThatThreeRaisedToTwoReturnsNine() {
-        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.of(3, 2), 9);
+        assertEquals( "PowerFinder.of did not return expected output.", powerFinder.calculatePower(3, 2), 9);
     }
 }
